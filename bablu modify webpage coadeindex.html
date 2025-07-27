@@ -1,121 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bablu Fresh Vegetables A-Z</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bablu Fresh Vegetables - A to Z</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDfxaFqtsI0V6d-pYZfZwWNh6FL0pfmZGzw&s');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-      color: #ffffff;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
     }
-    header {
-      background-color: rgba(0, 100, 0, 0.8);
-      padding: 20px;
+    .header {
       text-align: center;
-      font-size: 2em;
-      font-weight: bold;
-      color: #fff;
-    }
-    .content {
-      background-color: rgba(0, 100, 0, 0.7);
       padding: 20px;
+      background-color: #4CAF50;
+      color: white;
     }
-    .offer-box, .contact-box {
-      background-color: #2e8b57;
-      padding: 15px;
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
       border-radius: 10px;
-      margin: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
     }
-    .vegetable-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
+    .card:hover {
+      transform: scale(1.03);
     }
-    .veg-item {
-      background-color: #006400;
-      padding: 10px;
-      border-radius: 8px;
-      width: 200px;
-      text-align: center;
-      color: #fff;
-    }
-    .veg-item img {
+    .card img {
       width: 100%;
-      height: auto;
-      border-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4CAF50;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <header>Bablu Fresh Vegetables A-Z</header>
-
-  <div class="content">
-    <div class="offer-box">
-      <p>🔥 Any person can buy 10 items of vegetables for just ₹249!</p>
-      <p>🮺 Each vegetable costs ₹50 for 1kg and ₹30 for 500g.</p>
-      <p>🚚 Delivery in just 30 minutes!</p>
-      <p>🌿 Always fresh vegetables guaranteed.</p>
-      <p>🎁 First 10 customers get 50% OFF!</p>
-    </div>
-
-    <h2 style="text-align: center;">Our Vegetables</h2>
-    <div class="vegetable-gallery">
-      <div class="veg-item">
-        <img src="https://t4.ftcdn.net/jpg/05/37/04/61/360_F_537046123_s8JVn2NrClPQDOryhSm8jonYZPfIzPRX.jpg" alt="Tomato">
-        <p>Tomato<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoIJjbXvJZeiMDlC1KQpUEgsKXLs8V91bRhg&s" alt="Green Chili">
-        <p>Green Chili<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcvysOtV2vg_upVLMDp8OYut8sIqaPJRnOuw&s" alt="Carrot">
-        <p>Carrot<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhh8j7ISf4wwGn0ohxsw-97sMFsfRJBd2oEQ&s" alt="Brinjal">
-        <p>Brinjal<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_G-TdGVLhskcpJVkYGx42P76E6SjW3_30Q&s" alt="Green Beans">
-        <p>Green Beans<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://t4.ftcdn.net/jpg/00/69/19/09/240_F_69190946_dO9NYtUPGwAcKBR3pzeuwNkQy9bRCDbg.jpg" alt="Garlic">
-        <p>Garlic<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://t3.ftcdn.net/jpg/00/93/87/58/240_F_93875874_u9pFhj8A6MNFchnUgNTAAAWnmIA4F4Y0.jpg" alt="Ginger">
-        <p>Ginger<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://t3.ftcdn.net/jpg/01/91/55/42/240_F_191554261_Kfn9mPkFP2lRmNuSkLkoe6yMnOdC1GUC.jpg" alt="Drumstick">
-        <p>Drumstick<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://t4.ftcdn.net/jpg/02/49/93/33/240_F_249933303_rB82fjbNuZdT3444cZfutFG1Wau0T1VA.jpg" alt="Cabbage">
-        <p>Cabbage<br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-      <div class="veg-item">
-        <img src="https://t3.ftcdn.net/jpg/00/41/30/10/240_F_41301053_AbLi3hlosbLajBo7lQdNyfGz9eusxY1x.jpg" alt="Spinach">
-        <p>potatoes <br>1kg: ₹50 | 500g: ₹30</p>
-      </div>
-    </div>
-
-    <div class="contact-box">
-      <h3>Contact & Delivery</h3>
-      <p>📍 Address: Koritipadu Road 1st Line, Guntur</p>
-      <p>📞 Phone: 9985560232</p>
-      <p>📧 Email: gopi.dammati@gmail.com</p>
-    </div>
+  <div class="header">
+    <h1>Bablu Fresh Vegetables - A to Z</h1>
+    <p>Wholesale & Retail | Fast Delivery in Your Area</p>
+    <p>Contact: +91-9985560232 | Address: 1/23, Bodavada (V), Parchur (M), Bapatla (Dist), AP, India - 523169</p>
+  </div>
+  <div class="container">
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/05/37/04/61/360_F_537046123_s8JVn2NrClPQDOryhSm8jonYZPfIzPRX.jpg"><h3>Tomato</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/00/69/19/09/240_F_69190946_dO9NYtUPGwAcKBR3pzeuwNkQy9bRCDbg.jpg"><h3>Beetroot</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/00/93/87/58/240_F_93875874_u9pFhj8A6MNFchnUgNTAAAWnmIA4F4Y0.jpg"><h3>Brinjal</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/01/91/55/42/240_F_191554261_Kfn9mPkFP2lRmNuSkLkoe6yMnOdC1GUC.jpg"><h3>Capsicum</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/02/49/93/33/240_F_249933303_rB82fjbNuZdT3444cZfutFG1Wau0T1VA.jpg"><h3>Carrot</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/00/41/30/10/240_F_41301053_AbLi3hlosbLajBo7lQdNyfGz9eusxY1x.jpg"><h3>Cauliflower</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/03/17/65/02/240_F_317650281_F8wIS8VeY0MUUf2nJKE5Jda8BU99MKMR.jpg"><h3>Chilli</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/06/02/28/34/240_F_602283416_cHGVbzIlQr3ad54LpjG3Mef0moSXdG0l.jpg"><h3>Onion</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/04/40/15/20/240_F_440152072_DJsF2PgXsWLIDPXF1RC3GUuTpRd5lqAp.jpg"><h3>Garlic</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/04/24/93/20/240_F_424932014_dFtsOhGz1R2TR6ScaZ5ml4BnubObYJG2.jpg"><h3>Potato</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/08/32/38/12/240_F_832381276_Lm0WW62uGvqXYehiHdiuvPGlrbg12ZJv.jpg"><h3>Drumstick</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/11/47/11/00/240_F_1147110058_2uTNAbvLeRZmX3mpNLFLxaGURgj3sOVH.jpg"><h3>Green Beans</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/05/45/81/61/240_F_545816125_9St681BEoue4hiTi3I36j7cANnrPEbWx.jpg"><h3>Bottle Gourd</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/05/55/63/22/240_F_555632222_G6SXF3PRACa1zQy85iQU4jeA90aWQonS.jpg"><h3>Ridge Gourd</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/08/31/37/47/240_F_831374760_Zp8Crl3iu0D1GspWwPtC5WxPIBNvzN61.jpg"><h3>Snake Gourd</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/06/27/16/78/240_F_627167800_XG8OaUtP06mA760VF9mguhYJo3CVDOAf.jpg"><h3>Lady Finger</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/03/41/49/03/240_F_341490366_ZWIWMckTPBZZdYX5bcSvae3vWe0SvmXL.jpg"><h3>Radish</h3></div>
+    <div class="card"><img src="https://t4.ftcdn.net/jpg/08/95/80/73/240_F_895807382_7EgqzCwJN5lKdq9quPObfvsoLjSbb8OT.jpg"><h3>Spinach</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/01/71/05/12/240_F_171051280_G0vWhu6NCKLtffByZpHoQ2je3y8LLOvR.jpg"><h3>Spring Onion</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/00/53/99/50/240_F_53995063_talkAqUTJ5P0tUcqeBN2SYM6HfVNJ022.jpg"><h3>Turnip</h3></div>
+    <div class="card"><img src="https://t3.ftcdn.net/jpg/01/78/51/50/240_F_178515014_Wd8kSe6a1JXYSUdHIea8vdDEIrFERcao.jpg"><h3>Yam</h3></div>
+  </div>
+  <div class="footer">
+    <p>&copy; 2025 Bablu Fresh Vegetables | For Orders: Call/WhatsApp +91-9985560232</p>
   </div>
 </body>
 </html>
